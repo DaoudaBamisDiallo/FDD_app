@@ -10,8 +10,8 @@ import pandas as pd
 
 # description de l'application
 st.image("datasets_bd/images/presnation.webp")
-st.title("Welcome to Fast_Finding Diabete")
-st.header("Réalisée par : Pro-Data_Consulting")
+st.title("Bienvenue à Fast Diabete Detection")
+st.header("Réalisée par : AI-Data_Consulting Group")
 st.markdown(("FFD est une application est conçcue pour détecter très rapidement le diabete chez les femmes"))
 
 #chagement du modele
