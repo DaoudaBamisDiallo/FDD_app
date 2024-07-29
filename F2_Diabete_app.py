@@ -5,7 +5,7 @@ import streamlit as st
 import numpy as np
 import pickle as pkl
 import pandas as pd
-import joblib
+import joblib as jlb
 
 #-------------modelisation et deployement----------------------------
 
@@ -16,12 +16,12 @@ st.header("Réalisée par : AI-Data_Consulting Group")
 st.markdown(("FFD est une application est conçcue pour détecter très rapidement le diabete chez les femmes"))
 
 #chagement du modele
-@st.cache_data(persist=True)
+# @st.cache_data(persist=True)
 def load_model():
     # with open("datasets_bd/db/model_diabete.pkl","rb") as file:
     #     data = pkl.load(file)
     # file.close()
-    data = joblib.load("datasets_bd/db/model_diabete.joblib")
+    data = jlb.load("datasets_bd/db/model_diabete.joblib")
     return data
 
 model_diabete = load_model()
