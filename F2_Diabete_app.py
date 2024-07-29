@@ -15,7 +15,7 @@ st.header("Réalisée par : AI-Data_Consulting Group")
 st.markdown(("FFD est une application est conçcue pour détecter très rapidement le diabete chez les femmes"))
 
 #chagement du modele
-@st.cache_data(persist=True)
+# @st.cache_data(persist=True)
 def load_model():
     with open("datasets_bd/db/model_diabete.pkl","rb") as file:
         data = pkl.load(file)
@@ -31,7 +31,7 @@ def inference(Glucose,BMI,Age,DiabetesPedigreeFunction,BloodPressure,Pregnancies
     return diabetique
 # saisie des iinformations du patience
         
-st.header("Informations de la patiente")
+st.header("Informations du patiente")
 col1,col2 = st.columns(2)
 with col1 : 
     Glucose = st.number_input(label="Taus du glucose",min_value=0.0,max_value=1.0,value=0.621212)
