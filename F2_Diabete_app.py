@@ -5,7 +5,7 @@ import streamlit as st
 import numpy as np
 import pickle as pkl
 import pandas as pd
-import sklearn
+# import sklearn
 
 #-------------modelisation et deployement----------------------------
 
