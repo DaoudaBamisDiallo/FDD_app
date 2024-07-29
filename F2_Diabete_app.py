@@ -1,3 +1,4 @@
+# def main():
 #-------------------package------------------
 # packages necessaires 1=V.1
 import streamlit as st
@@ -6,7 +7,7 @@ import pickle as pkl
 import pandas as pd
 
 #-------------modelisation et deployement----------------------------
-# def main():
+
 # description de l'application
 st.image("datasets_bd/images/presnation.webp")
 st.title("Welcome to Fast_Finding Diabete")
@@ -56,6 +57,5 @@ with col3 :
 with col4 :
     url ="https://ettienyann-diabete-diabete-tr9slg.streamlit.app/"
     st.button("[Retour à analyse](%s)" % url,type="primary")
-# if __name__=='main':
-# #   main()
+
         
